@@ -1,0 +1,14 @@
+scalar Date
+
+type Planos {
+  titulo: String!
+  valor: Float!,
+  valorUSD: Float!,
+  valorEUR: Float!,
+  data: Date!
+}
+
+type Query {
+  planos: [Planos!]!
+  plano(titulo: String!): Planos
+}
